@@ -1,0 +1,81 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>Registrar Cliente</title>
+    	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+	</head>
+	
+	<body background="fondo.JPG">
+    <nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="index.html"><img src="/CloStore1.PNG"/></a>
+    </div>
+    <div>
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="index.html"><span class="glyphicon glyphicon-home"></span> Home</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        	<li><a href="login.jsp"><span class="glyphicon glyphicon-log-in"></span><font color="slategray"> Login</font></a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+	
+	<div class="container">
+	<div class="jumbotron">
+	<h1><font color="#0080FF">Registro de Clientes</font></h1>
+  	<form action="http://www.cerospam.com.ar/form.php" method="post" role="form" name="formCrearCliente">
+  		<div class="row">
+  		<div class="col-xs-7">
+  		<div class="form-group">
+  			<label for="nombreCliente">Nombre *</label>
+  			<input type="text" class="form-control" placeholder="Nombre Completo" id="nombre" name="nombre" required>
+   		</div>
+   		<div class="form-group">   		
+   			<label for="apellidoCliente">Usuario *</label>
+   			<input type="text" class="form-control" placeholder="Usuario" id="usuario" name="usuario" required>	   		
+   		</div>
+   			<label for="emailCliente">Correo electronico *</label>
+            <input type="email" class="form-control" placeholder="e-mail" id="email" name="email" required> 
+   		</div>
+   		
+   		<div class="col-xs-5">
+   		<div class="form-group">
+   			<label for="contraseniaCliente">Contraseña * </label>
+   			<input type="password" class="form-control" placeholder="Contraseña" id="dcontrasenia" name="contrasenia" required>
+   			</div>
+   		<div class="form-group">
+   			<label for="contraseniaCliente">Confirme la contraseña *</label>
+   			<input type="password" class="form-control" placeholder="Ingrese nuevamente la contraseña" id="confcontrasenia" name="confcontrasenia" required>
+   		</div>
+   		</div>
+   		
+   		<div class="col-xs-2">
+   		<div class="form-group">
+   		<label for="captcha">No soy un robot </label>
+   		<input type="text" size="10" class="form-control" name="cerospam_code" value="" />
+   		<script type="text/javascript">
+		<!--
+		cerospam_client = 1641;
+		cerospam_form = 1653;
+		cerospam_background = "1";
+		cerospam_width = 200;
+		//-->
+		</script>
+		<script type="text/javascript" src="http://www.cerospam.com.ar/captcha.php"></script>
+			<p></p>
+			<input type="hidden" name="action" value="create"/>
+			<input type="submit" value="Registrar" class="btn btn-success">
+		</div>
+		</div>
+		</div>
+        <div class="clearfix visible-lg"></div>
+	</form>
+	</div>
+	</div>
+	</body>
+</html>
